@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{padding-top:10px;}
+    .all_bg{
+        width:800px;height:600px;margin:0px auto;
+    }
+    #allcanvas{
+        position: relative;
+        width:800px;height:600px;
+        margin: 0px;
+    }
+    #canvas1{position: absolute;width:800px;height:600px;z-index: 1;bottom:0;left:0;}
+    #canvas2{position: absolute;width:800px;height:600px;z-index: 0;bottom:0;left:0;}
+  </style>
+</head>
+<body>
+  <div class="all_bg">
+    <div id="allcanvas">
+        <canvas id="canvas1" width="800" height="600"></canvas>
+        <canvas id="canvas2" width="800" height="600"></canvas>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/bg.js"></script>
+  <script src="js/ane.js"></script>
+  <script src="js/fruit.js"></script>
+  <script src="js/mon.js"></script>
+  <script src="js/baby.js"></script>
+  <script src="js/collsion.js"></script>
+  <script src="js/score.js"></script>
+  <script src="js/wave.js"></script>
+</body>
+</html>
