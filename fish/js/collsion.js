@@ -17,7 +17,11 @@ function monFood(){
 function monBaby(){
   var l=distance(mon.x,mon.y,baby.x,baby.y)
   if(l<400){
-    //wave.create("baby") 
+    wave.start+=deltaTime
+    if(wave.start>wave.end){
+      wave.create("baby")
+      wave.start=0
+    }
     score.addScore()
   }
 }

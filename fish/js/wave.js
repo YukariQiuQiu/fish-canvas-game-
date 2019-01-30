@@ -10,6 +10,9 @@ var waveObj=function(){
   this.alpha=[]
   this.type=[]
   this.alive=[]
+
+  this.start=0 //控制大鱼喂小鱼时候的光圈显示频率
+  this.end=500
 }
 
 waveObj.prototype.create=function(type){
